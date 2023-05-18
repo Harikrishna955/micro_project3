@@ -1,0 +1,274 @@
+body {
+    position: relative;
+
+    background: #D6BCFF;
+}
+
+#heading {
+    position: relative;
+    font-family: 'DN Sans';
+    font-style: normal;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0.625em;
+    color: #6F3CFF;
+    text-align: center;
+    margin-top: 8%;
+}
+
+.box1 {
+    width: 50%;
+
+}
+
+.rectangle1 {
+    position: absolute;
+    width: 818px;
+    height: 494px;
+    left: 230px;
+    background: #FFFFFF;
+    box-shadow: -1px 6px 55px rgba(0, 0, 0, 0.16);
+    border-radius: 21px;
+}
+
+#Bill {
+    position: absolute;
+    width: 37px;
+    height: 12px;
+    left: 43px;
+    top: 15px;
+    font-family: 'Inconsolate';
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 16px;
+    letter-spacing: 0.045em;
+    color: #9C60FF;
+}
+
+#amountInput {
+    position: absolute;
+    width: 337px;
+    height: 43px;
+    left: 43px;
+    top: 50px;
+    background: rgba(182, 172, 196, 0.53);
+    border-radius: 3px;
+    font-family: monospace;
+    font-style: normal;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.01em;
+    color: #9C60FF;
+    border: none;
+}
+
+#amountInput::-webkit-outer-spin-button,
+#amountInput::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+#tiptext {
+    position: absolute;
+    left: 43px;
+    top: 120px;
+    width: 98px;
+    height: 396px;
+    font-family: 'Inconsolate';
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 16px;
+    letter-spacing: 0.045em;
+    color: #9C60FF;
+}
+
+.button-container {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    left: 43px;
+    top: 150px
+}
+
+.row {
+    width: 100%;
+    display: flex;
+
+}
+
+.row button {
+    width: 106px;
+    height: 44px;
+    background: #9C60FF;
+    border: 1.6px solid #4200FF;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.no-margin {
+    margin-left: 0;
+}
+
+.people {
+    position: absolute;
+    left: 43px;
+    top: 300px;
+}
+
+p {
+    width: 131px;
+    height: 16px;
+    font-family: 'Inconsolate';
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 16px;
+    letter-spacing: 0.045em;
+    color: #9C60FF;
+
+}
+
+.people input {
+    width: 337px;
+    height: 43px;
+    background: rgba(182, 172, 196, 0.53);
+    border-radius: 3px;
+    font-family: monospace;
+    font-style: normal;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.01em;
+    color: #9C60FF;
+    border: none;
+
+}
+
+#button {
+    width: 337px;
+    height: 46px;
+    margin-top: 20px;
+    background: #9C60FF;
+    border-radius: 9px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-size: 19px;
+    font-weight: 800;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+}
+
+#button[disabled] {
+    cursor: not-allowed;
+}
+
+#button[enabled] {
+    cursor: pointer;
+}
+
+.box2 {
+    position: absolute;
+    width: 367px;
+    height: 400px;
+    left: 425px;
+    top: 50px;
+    background: #9C60FF;
+    border-radius: 11px;
+}
+
+.Tipamount {
+
+    position: absolute;
+    left: 20px;
+    top: 20px;
+
+}
+
+/* 
+{
+
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0.045em;
+    color: #F3E4FF;
+    margin-bottom: 0;
+
+} */
+
+.Total {
+    position: absolute;
+    left: 20px;
+    top: 110px;
+
+
+}
+
+
+
+.left-text {
+
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0.045em;
+    color: #F3E4FF;
+    margin-bottom: 0;
+}
+
+h6 {
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: 0.045em;
+    color: #C39FFF;
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+#reset button {
+    position: absolute;
+    width: 295px;
+    height: 43px;
+    left: 30px;
+    top: 325px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    font-family: 'DM Scas';
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.19em;
+    color: #9C60FF;
+    border: none;
+    cursor: pointer;
+}
+
+.right-text {
+    font-family: 'DM Scas';
+    font-style: normal;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: 0.01em;
+    color: #C39FFF;
+
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="billspill.css">
+</head>
+
+<body>
+    <h3 id="heading">BILL <br>SPILL</h3>
+
+    <div class="rectangle1">
+        <div class="box1">
+            <p id="Bill">bill</p>
+
+            <form>
+                <input type="number" id="amountInput" name="amountInput" class="amountInput" pattern="[0-9]*" required
+                    placeholder="₹0">
+            </form>
+            <p id="tiptext">Select Tip %</p>
+            <div class="button-container">
+                <div class="row">
+                    <button onclick="calculateTip(5)">5%</button>
+                    <button onclick="calculateTip(10)">10%</button>
+                    <button onclick="calculateTip(15)">15%</button>
+                </div>
+                <div class="row">
+                    <button onclick="calculateTip(25)">25%</button>
+                    <button onclick="calculateTip(50)">50%</button>
+                    <button onclick="calculateTip(75)">75%</button>
+                </div>
+
+            </div>
+            <div class="people">
+                <p>Number of People</p>
+                <form>
+                    <input type="number" id="peopleInput" name="peopleInput" class="peopleInput" pattern="[0-9]*"
+                        required min="0" step="1" placeholder="0">
+                </form>
+                <button id="button" type="submit" onclick="generateBill()">Generate Bill</button>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="Tipamount">
+                <span class="left-text">Tip Amount</span>
+                <h6>/person</h6>
+                <span class="right-text" id="tipAmount">₹0.00</span>
+
+            </div>
+            <div class="Total">
+                <span class="left-text">Total</span>
+                <h6>/person</h6>
+                <span class="right-text" id="totalAmount">₹0.00</span>
+
+            </div>
+            <div id="reset">
+                <button onclick="reset()" id="reset">RESET</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="billspill.js"></script>
+</body>
+
+</html>
